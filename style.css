@@ -1,0 +1,32 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Calibri, sans-serif;
+}
+
+.image-container {
+    height: 100svh;
+    background-image: url('./img/01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.thumbnail-container {
+    background-color: pink;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7rem;
+    width: 30rem;
+    overflow-x: scroll;
+    display: flex;
+    align-items: stretch;
+
+}
+.thumbnail-container img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+}
