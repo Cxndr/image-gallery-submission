@@ -1,4 +1,4 @@
-# Deez Sloths
+# Image Gallery Week02 Project
 
 ## Requirements
 
