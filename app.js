@@ -59,7 +59,7 @@ images.forEach(function (img, index) {
   imageElement.src = img.url;
   imageElement.srcset = img.srcset;
   imageElement.alt = img.alt;
-  imageElement.ariaLabel = `Image ${img.number} by ${img.author}: press enter to load`;
+  imageElement.ariaLabel = `Image ${img.number} by ${img.creator}. Press enter to load`;
   imageElement.tabIndex = 0;
 
   imageElement.addEventListener("click", function () {
