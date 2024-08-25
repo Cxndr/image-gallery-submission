@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦥</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
     <title>Deez Sloths</title>
-</head>
-<body>
-    <div id="image-container" class="image-container"></div>
-    <div id="thumbnail-container" class="thumbnail-container"></div>
-</body>
+  </head>
+  <body>
+    <img
+      id="image-container"
+      class="image-container"
+      src="./img/01.jpg"
+      srcset="
+        ./img/640/01.jpg   640w,
+        ./img/1280/01.jpg 1280w,
+        ./img/1920/01.jpg 1920w,
+        ./img/01.jpg      2000w
+      "
+      alt = "A sloth is looking at the camera." 
+      aria-live = "polite"
+    />
+    <div id="thumbnail-container" class="thumbnail-container" data-simplebar></div>
+    <div class="loading" id="loading" aria-hidden="true">loading...</div>
+  </body>
 </html>
